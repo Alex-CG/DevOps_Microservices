@@ -10,9 +10,9 @@ dockerpath=alexcgdocker/mlapp
 # Step 2:  
 # Authenticate & tag
 docker login --username alexcgdocker
-docker tag dlocal $dockerpath
+docker tag mlapp $dockerpath
 echo "Docker ID and Image: $dockerpath"
 
 # Step 3:
 # Push image to a docker repository
-docker push $dockerpath
+docker image push $dockerpath
